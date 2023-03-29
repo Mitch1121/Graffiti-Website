@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Main Diplay Section -->
+	
+<section class="main_display">
+		
+		
+    <h1>Contact Form</h1>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto vel doloribus aliquam consequatur at magni, quo culpa necessitatibus dolorem voluptatum id, impedit harum sint! Voluptatem.</p>
+    
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <div>
+            <label for="name">Name:
+            <input type="text" name="fname" id="name" />
+            </label>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="email">Email:
+            <input type="text" name="Email" id="email" />
+            </label>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label>Comments:</label>
+            <br />
+            <textarea name="Comments" rows="12" cols="35">Send your comments to us.</textarea>
+        </div>
+        <div>
+            <input type="submit" name="submit" value="Send" />
+            <input type="reset" name="reset" value="Clear Form" />
+        </div>
+    </form>
+
+</section>
+
+<script src="validation.js"></script>
+<!-- Javascript
+    <script>
+		function validateForm() {
+		let x = document.forms["myForm"]["fname"].value;
+		if (x == "") {
+			alert("Name must be filled out");
+			return false;
+		}
+		let y = document.forms["myForm"]["Email"].value;
+		if (y == "") {
+			alert("Email must be filled out");
+			return false;
+		}
+		let z = document.forms["myForm"]["Comments"].value;
+		if (z == "") {
+			alert("Comments must be filled out");
+			return false;
+		}
+	}
+	</script>-->
+</body>
+</html>

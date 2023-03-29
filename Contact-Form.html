@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="validation.js"></script>
+    <header>
+            <section>
+                <nav>
+                        <a href="Contact-Form.html">Contact Us</a>
+                        <a href="Graffiti-Supplies.html">Locations</a>
+                        <a href="Popular-Writers.html">Popular Writers</a>
+                        <a href="Famous-Pieces.html">Famous Pieces</a>
+                        <a href="index.html">Home</a>
+                 </nav>
+                </section>
+                <h1><span>CONTACT</span> US</h1>
+     </header>
+
+     <section class="main_display">
+
+            <h2>Contact Form</h2>
+            
+            <p>All comments will be sent to: BristolGraffWebsite@example.com</p>
+            
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                <div>
+                    <label for="name">Name:
+                    <input type="text" name="fname" id="name" />
+                    </label>
+                    <br>
+                    <br>
+                </div>
+                <div>
+                    <label for="email">Email:
+                    <input type="text" name="Email" id="email" />
+                    </label>
+                    <br>
+                    <br>
+                </div>
+                <div>
+                    <label>Comments:</label>
+                    <br />
+                    <textarea name="Comments" rows="12" cols="35">Send your comments to us.</textarea>
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Send" />
+                    <input type="reset" name="reset" value="Clear Form" />
+                </div>
+            </form>
+        
+        </section>
+</head>
